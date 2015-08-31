@@ -2,7 +2,7 @@ import Faker from 'faker';
 
 let data = [];
 let max = 200000;
-console.log(Faker)
+
 for(let i=0;i<max;i++){
   data.push({
     "name": Faker.commerce.productName(),

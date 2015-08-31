@@ -20,7 +20,6 @@ export default class extends React.Component {
   }
 
   filterProducts(event) {
-    console.log(this);
     event.preventDefault();
     const regex = new RegExp(event.target.value, 'i');
     const filtered = this.state.products.filter(function(item) {
@@ -36,7 +35,7 @@ export default class extends React.Component {
     if (this.state.products.length) {
       return (
         <div className="container">
-          <h1 className="title">React Demo</h1>
+          <h1 className="title">React Demo { this.state.products.length } products</h1>
           <ProductFilter filterProducts={ this.filterProducts.bind(this) } />
           <ProductGrid products={ this.state.filteredProducts } />
         </div>

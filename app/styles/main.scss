@@ -15,7 +15,7 @@ body {
 
 .row {
     display: block;
-    margin-right: -1rem;
+    margin-right: -0.5rem;
     margin-left: -0.5rem;
     .col-33 {
         width: 33.3333%;
@@ -35,19 +35,25 @@ body {
 .product-item {
     .product-content {
         padding: 0.5rem;
-        text-transform: capitalize;
-        text-align: center;
         p {
             margin: 0;
         }
         .product-price {
             font-weight: bold;
         }
+        .product-color {
+            border-radius: 50%;
+            margin-left: 10px;
+            vertical-align: text-bottom;
+            width: 15px;
+            display: inline-block;
+            height: 15px;
+        }
     }
 }
 
 .image {
-    max-width: 100%;
+    width: 100%;
 }
 
 .search {

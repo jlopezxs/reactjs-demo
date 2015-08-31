@@ -13,13 +13,14 @@ export default class ProductGrid extends React.Component {
             name={product.name} 
             price={product.price} 
             stock={product.stock} 
-            id={product.id} />
+            id={product.id}
+            color={product.color}/>
   }
 
   render() {
     return <div className="product-grid row">
-      <VirtualList items={this.props.products} renderItem={this.ProductItem} itemHeight="50"/>
-    </div>
+              <VirtualList className="clearfix" items={this.props.products} itemsPerRow="3" renderItem={this.ProductItem} itemHeight="270"/>
+            </div>
   }
 }
 
