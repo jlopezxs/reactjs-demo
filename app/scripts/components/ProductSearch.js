@@ -1,6 +1,5 @@
 import React from 'react';
 import products from '../api/products';
-import ProductGrid from './ProductGrid';
 import ProductFilter from './ProductFilter';
 import ProductItem from './ProductItem';
 import VirtualGrid from './VirtualGrid';
