@@ -2,8 +2,7 @@
   "name": "reactjs",
   "version": "0.0.0",
   "dependencies": {
-    "faker": "~3.0.1",
-    "react-virtual-list": "~1.5.1"
+    "faker": "~3.0.1"
   },
   "devDependencies": {
     "babelify": "^6.0.2",

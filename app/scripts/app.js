@@ -1,7 +1,7 @@
 import React from 'react';
-import Home from './components/Home';
+import ProductSearch from './components/ProductSearch';
 
 window.React = React;
 const mountNode = document.getElementById('app');
 
-React.render(<Home/>, mountNode);
+React.render(<ProductSearch/>, mountNode);

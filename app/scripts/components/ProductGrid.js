@@ -4,7 +4,7 @@
 
 import React from 'react';
 import ProductItem from './ProductItem';
-import VirtualList from 'react-virtual-list';
+import VirtualGrid from './VirtualGrid';
 
 export default class ProductGrid extends React.Component {
   ProductItem(product){
@@ -19,7 +19,12 @@ export default class ProductGrid extends React.Component {
 
   render() {
     return <div className="product-grid row">
-              <VirtualList className="clearfix" items={this.props.products} itemsPerRow="3" renderItem={this.ProductItem} itemHeight="270"/>
+              <VirtualGrid className="clearfix" 
+                          items={this.props.products} 
+                          columns="3" 
+                          renderItem={this.ProductItem} 
+                          itemHeight="258"
+                          buffer="3"/>
             </div>
   }
 }
