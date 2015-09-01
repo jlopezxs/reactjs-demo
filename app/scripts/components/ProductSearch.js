@@ -45,15 +45,21 @@ export default class extends React.Component {
   render() {
     if (this.state.products.length) {
       return (
+        <div>
+        <header>
+          <div className="container">
+            <h1 className="title">React Demo <strong>{ this.state.filteredProducts.length }</strong> products</h1>
+            <ProductFilter filterProducts={ this.filterProducts.bind(this) } />
+          </div>
+        </header>
         <div className="container">
-          <h1 className="title">React Demo { this.state.filteredProducts.length } products</h1>
-          <ProductFilter filterProducts={ this.filterProducts.bind(this) } />
           <VirtualGrid className="clearfix row" 
                       items={this.state.filteredProducts} 
                       columns="3" 
                       renderItem={this.ProductItem} 
                       itemHeight="258"
                       buffer="3"/>
+        </div>
         </div>
       );
     } else {
